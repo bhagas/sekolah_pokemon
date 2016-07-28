@@ -1,0 +1,16 @@
+{
+    "auth_service": "google",
+    "username": "",
+    "password": "",
+    "location": "-6.949733 110.392091",
+    "gmapkey": "",
+    "max_steps": 5,
+    "mode": "all",
+    "walk": 30,
+    "debug": false,
+    "test": false,
+    "initial_transfer": 0,
+    "location_cache": true,
+    "distance_unit": "km",
+    "item_filter": ["101","102","103","104"]
+}
