@@ -13,20 +13,19 @@ Protobuf 3 installation
 
 
 
-Windows
 
-
-Instal pyaml terlebih dahulu  [installer](http://pyyaml.org/wiki/PyYAML) and not through requirements.txt.
+Instal pyaml terlebih dahulu  [installer](http://pyyaml.org/wiki/PyYAML).
 
 Windows 10:
-    Go to [this](http://www.lfd.uci.edu/~gohlke/pythonlibs/#pyyaml) page dan download: PyYAML-3.11-cp27-cp27m-win32.whl   
+   Buka [this](http://www.lfd.uci.edu/~gohlke/pythonlibs/#pyyaml) page dan download: PyYAML-3.11-cp27-cp27m-win32.whl   
     (jika 64 bit maka muncul' error,
     download the 64 bit version instead: PyYAML-3.11-cp27-cp27m-win_amd64.whl )
 ```
 copy pip ke folder bot
 
 ```
-
+setting config.json (user password dan lokasi)
+setting release_config.json (untuk auto transfer sesuai cp yg diinginkan)
 
 $ cd ke folder bot  
 $ pip install PyYAML-3.11-cp27-cp27m-win32.whl
