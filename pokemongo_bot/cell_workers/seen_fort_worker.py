@@ -59,6 +59,7 @@ class SeenFortWorker(object):
 
                 items_awarded = spin_details.get('items_awarded', False)
                 if items_awarded:
+                    self.config.mode = 'all'
                     tmp_count_items = {}
                     for item in items_awarded:
                         item_id = item['item_id']
@@ -73,7 +74,7 @@ class SeenFortWorker(object):
                         logger.log("[+] " + str(item_count) +
                                     "x " + item_name +
                                     " (Total: " + str(self.bot.item_inventory_count(item_id)) + ")", 'green')
-                        self.config.mode = 'all'
+                        
                         # RECYCLING UNWANTED ITEMS
                         if str(item_id) in self.config.item_filter:
                             logger.log("[+] Recycling " + str(item_count) + "x " + item_name + "...", 'green')
