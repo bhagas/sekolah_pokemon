@@ -1,7 +1,7 @@
 instal python, pip dan protobuf 3
 Requirements
 
-1. - [Python 2.7.x](http://docs.python-guide.org/en/latest/starting/installation/)
+1. - [Python 2.7.x](https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi)
 2. - [pip](https://bootstrap.pypa.io/get-pip.py) <--klik kanan save link as dan simpan di filder python27
 3. buka cmd setelah itu ketik :
 ```
