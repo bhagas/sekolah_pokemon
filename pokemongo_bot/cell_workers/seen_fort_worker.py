@@ -101,10 +101,8 @@ class SeenFortWorker(object):
                                     seconds_since_epoch)))
 
                 if not items_awarded and not experience_awarded and not pokestop_cooldown:
-                    message = (
-                        'Masih kena softbanned')
-                print_red(message)
-                self.config.mode = 'farm'
+                        print_red('Masih kena softbanned')
+                        self.config.mode = 'farm'
             elif spin_details['result'] == 2:
                 logger.log("[#] Pokestop out of range")
             elif spin_details['result'] == 3:
