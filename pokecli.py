@@ -175,7 +175,7 @@ def main():
     if not config:
         return
 
-    logger.log('[x] PokemonGO Bot v1.0 by Bhagas', 'green')
+    logger.log('[x] Sekolah Pokemon v2.0 by Bhagas', 'green')
     logger.log('[x] Menjalankan Konfigurasi', 'yellow')
 
     try:
