@@ -8,7 +8,7 @@ Requirements
 > python get-pip.py  
 
 ```
-4. - [git](https://git-scm.com/download/win)
+4.[git](https://git-scm.com/download/win)
 
 5.masuk kedalam folder instalasi git lalu buka git-cmd.exe
 
