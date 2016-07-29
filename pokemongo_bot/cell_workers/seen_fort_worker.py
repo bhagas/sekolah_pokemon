@@ -9,6 +9,7 @@ from pokemongo_bot.human_behaviour import sleep
 from pokemongo_bot import logger
 
 
+
 class SeenFortWorker(object):
     def __init__(self, fort, bot):
         self.fort = fort
@@ -72,7 +73,7 @@ class SeenFortWorker(object):
                         logger.log("[+] " + str(item_count) +
                                     "x " + item_name +
                                     " (Total: " + str(self.bot.item_inventory_count(item_id)) + ")", 'green')
-
+                        self.config.mode = 'all'
                         # RECYCLING UNWANTED ITEMS
                         if str(item_id) in self.config.item_filter:
                             logger.log("[+] Recycling " + str(item_count) + "x " + item_name + "...", 'green')
@@ -102,7 +103,8 @@ class SeenFortWorker(object):
                 if not items_awarded and not experience_awarded and not pokestop_cooldown:
                     message = (
                         'Masih kena softbanned')
-                    raise RuntimeError(message)
+                print_red(message)
+                self.config.mode = 'farm'
             elif spin_details['result'] == 2:
                 logger.log("[#] Pokestop out of range")
             elif spin_details['result'] == 3:
@@ -131,3 +133,5 @@ class SeenFortWorker(object):
     @staticmethod
     def closest_fort(current_lat, current_long, forts):
         print x
+
+
