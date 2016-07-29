@@ -3,12 +3,12 @@ Requirements
 
 1. - [Python 2.7.x](http://docs.python-guide.org/en/latest/starting/installation/)
 2. - [pip](https://bootstrap.pypa.io/get-pip.py) <--klik kanan save link as dan simpan di filder python27
-3. setelah itu ketik :
+3. buka cmd setelah itu ketik :
 ```
 > python get-pip.py  
 
 ```
-4.[git](https://git-scm.com/download/win)
+4.Download [git](https://git-scm.com/download/win)
 
 5.masuk kedalam folder instalasi git lalu buka git-cmd.exe
 
