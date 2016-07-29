@@ -8,26 +8,22 @@ Requirements
 > python get-pip.py  
 
 ```
-4.Download [git](https://git-scm.com/download/win)
+4.download bot nya [disini](https://github.com/bhagas/sekolah_pokemon/archive/master.zip)
 
-5.masuk kedalam folder instalasi git lalu buka git-cmd.exe
+5.arahkan tadi ke dalam folder download bot tersebut contoh C:/nama_folder_bot/
 
-6.download bot nya [disini](https://github.com/bhagas/sekolah_pokemon/archive/master.zip)
+6.setting config.json (user password dan lokasi) menggunakan notepad
 
-7.arahkan tadi ke dalam folder download bot tersebut contoh C:/nama_folder_bot/
+7.setting release_config.json (untuk auto transfer sesuai cp yg diinginkan) menggunakan notepad
 
-8.setting config.json (user password dan lokasi) menggunakan notepad
+8.setting data/catch-ignore.yml (untuk filter penangkapan pokemon) menggunakan notepad
 
-9.setting release_config.json (untuk auto transfer sesuai cp yg diinginkan) menggunakan notepad
-
-10.setting data/catch-ignore.yml (untuk filter penangkapan pokemon) menggunakan notepad
-
-11. instal requirements dengan mengetik:
+9. instal requirements dengan mengetik:
 ```
 > pip install -r requirements.txt  
 
 ```
-12.untuk menjalankan ketik: 
+10.untuk menjalankan ketik: 
 ```
  
 > pokecli.py 
