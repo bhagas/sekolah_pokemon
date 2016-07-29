@@ -10,8 +10,12 @@ Requirements
 ```
 4.download bot nya [disini](https://github.com/bhagas/sekolah_pokemon/archive/master.zip)
 
-5.arahkan tadi ke dalam folder download bot tersebut contoh C:/nama_folder_bot/
+5.extract dan arahkan cmd ke dalam folder download bot tersebut contoh kita extract di folder D:/nama_folder_bot/ lalu ketik:
+```
+> D:
+>cd nama_folder_bot
 
+```
 6.setting config.json (user password dan lokasi) menggunakan notepad
 
 7.setting release_config.json (untuk auto transfer sesuai cp yg diinginkan) menggunakan notepad
