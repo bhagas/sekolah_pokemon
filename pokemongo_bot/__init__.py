@@ -206,8 +206,7 @@ class PokemonGoBot(object):
 
         self.get_player_info()
 
-        if self.config.initial_transfer:
-            self.initial_transfer()
+     
 
         logger.log('[#]')
         self.update_inventory()
@@ -220,37 +219,7 @@ class PokemonGoBot(object):
         #{'responses': {'RECYCLE_INVENTORY_ITEM': {'result': 1, 'new_count': 46}}, 'status_code': 1, 'auth_ticket': {'expire_timestamp_ms': 1469306228058L, 'start': '/HycFyfrT4t2yB2Ij+yoi+on778aymMgxY6RQgvrGAfQlNzRuIjpcnDd5dAxmfoTqDQrbz1m2dGqAIhJ+eFapg==', 'end': 'f5NOZ95a843tgzprJo4W7Q=='}, 'request_id': 8145806132888207460L}
         return inventory_req
 
-    def initial_transfer(self):
-        logger.log('[x] Initial Transfer.')
-
-        logger.log(
-        '[x] Preparing to transfer all duplicate Pokemon, keeping the highest CP of each type.')
-
-        logger.log('[x] Dibawah CP {} tidak di transfer'.format(
-            self.config.initial_transfer))
-
-        pokemon_groups = self._initial_transfer_get_groups()
-
-        for id in pokemon_groups:
-
-            group_cp = pokemon_groups[id].keys()
-            if len(group_cp) > 1:
-                group_cp.sort()
-                group_cp.reverse()
-
-                for x in range(1, len(group_cp)):
-                    if self.config.initial_transfer and group_cp[x] > self.config.initial_transfer:
-                        continue
-
-                    print('[x] Transfer {}  CP {}'.format(
-                        self.pokemon_list[id - 1]['Name'], group_cp[x]))
-                    self.api.release_pokemon(
-                        pokemon_id=pokemon_groups[id][group_cp[x]])
-                    response_dict = self.api.call()
-                    sleep(2)
-
-        logger.log('[x] Transferring Done.')
-
+  
     def _initial_transfer_get_groups(self):
         pokemon_groups = {}
         self.api.get_player().get_inventory()
