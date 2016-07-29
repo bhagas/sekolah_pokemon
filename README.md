@@ -12,9 +12,9 @@ Requirements
 
 5.masuk kedalam folder instalasi git lalu buka git-cmd.exe
 
-6.download bot nya [disini](https://github.com/bhagas/BOT_VALOR_SMG/archive/master.zip)
+6.download bot nya [disini](https://github.com/bhagas/sekolah_pokemon/archive/master.zip)
 
-7.arahkan tadi ke dalam folder download bot tersebut contoh C:/bot/
+7.arahkan tadi ke dalam folder download bot tersebut contoh C:/nama_folder_bot/
 
 8.setting config.json (user password dan lokasi) menggunakan notepad
 
